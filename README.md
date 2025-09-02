@@ -89,10 +89,9 @@ cd sustainability-tracker
    pip install django djangorestframework django-cors-headers
    ```
 
-4. **Run migrations and start the server:**
+4. **Start the server:**
 
    ```bash
-   python manage.py migrate
    python manage.py runserver
    ```
 
