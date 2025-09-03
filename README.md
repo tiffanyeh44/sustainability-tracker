@@ -23,7 +23,7 @@ A full-stack web application for managing and tracking sustainability actions. T
 
 ## Features
 
-### Backend (Django REST API)
+### Backend (Django REST Framework)
 
 - `GET /api/actions/` — Retrieve all sustainability actions.
 - `POST /api/actions/` — Add a new action.
@@ -36,8 +36,8 @@ A full-stack web application for managing and tracking sustainability actions. T
 ### Frontend (React)
 
 - Display actions in a table (ID, Action, Date, Points).
-- Add new actions via a form.
-- Edit and delete actions with buttons.
+- Add new actions via Action Form with Add Action button.
+- Edit and delete actions with Manage buttons.
 - Real-time updates after actions.
 - Responsive UI.
 
@@ -95,7 +95,7 @@ cd sustainability-tracker
    python manage.py runserver
    ```
 
-   The API will be available at [http://localhost:8000/api/actions/](http://localhost:8000/api/actions/)
+   The API will be available at [http://localhost:8000/api/actions/](http://localhost:8000/api/actions/).
 
 ---
 
@@ -119,13 +119,13 @@ cd sustainability-tracker
    npm start
    ```
 
-   The app will be available at [http://localhost:3000](http://localhost:3000)
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## Testing
 
-- Use Postman or curl to test API endpoints.
+- Use Postman or cURL to test API endpoints.
 - The frontend UI will display error messages for failed requests.
 
 ---

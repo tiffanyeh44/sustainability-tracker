@@ -7,7 +7,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
 
 # Virtual environment
 venv/
@@ -31,3 +30,4 @@ node_modules/
 # System files
 .DS_Store
 Thumbs.db
+

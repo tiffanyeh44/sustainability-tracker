@@ -1,7 +1,8 @@
 import AddActionForm from './components/AddActionForm';
 import ActionTable from './components/ActionTable';
-import React, { useState } from 'react'; // update action forms 
+import React, { useState } from 'react'; 
 
+//refreshKey state used to reload table data
 function App() {
   const [refreshKey, setRefreshKey] = useState(0);
 

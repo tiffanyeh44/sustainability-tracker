@@ -7,6 +7,8 @@ from rest_framework import status
 from .serializers import ActionSerializer
 from .storage import read_data, write_data
 
+
+# Handles list/create operations
 class ActionList(APIView):
     def get(self, request):
         data = read_data()
@@ -30,6 +32,7 @@ class ActionList(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
 
+# Handles retrieve/update/delete operations
 class ActionDetail(APIView):
     def get_object(self, pk):
         data = read_data()

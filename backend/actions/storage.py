@@ -1,6 +1,7 @@
 import json
 import os
 
+#Saving to JSON file
 DATA_FILE = os.path.join(os.path.dirname(__file__), 'data.json')
 
 def read_data():

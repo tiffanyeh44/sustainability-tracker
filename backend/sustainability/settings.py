@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'actions', 
-    'corsheaders',
+    'actions', # local app 
+    'corsheaders', # allow frontend to call API
     'django_extensions'
 ]
 
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True # open cross-origin access
 
 ROOT_URLCONF = 'sustainability.urls'
 

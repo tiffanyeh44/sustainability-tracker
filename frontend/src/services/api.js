@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// Axios helper for backend Django REST endpoints
 const API_BASE_URL = 'http://localhost:8000/api/actions/';
 
 export const getActions = () => axios.get(API_BASE_URL);

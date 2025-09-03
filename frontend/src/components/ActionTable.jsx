@@ -6,6 +6,7 @@ const ActionTable = () => {
   const [editingId, setEditingId] = useState(null);
   const [editData, setEditData] = useState({});
 
+  // Fetch list once on mount
   const fetchActions = async () => {
     try {
       const res = await getActions();
@@ -59,7 +60,7 @@ const ActionTable = () => {
           <th className="border px-4 py-2">Action</th>
           <th className="border px-4 py-2">Date</th>
           <th className="border px-4 py-2">Points</th>
-          <th className="border px-4 py-2">Actions</th>
+          <th className="border px-4 py-2">Manage</th>
         </tr>
       </thead>
       <tbody>
